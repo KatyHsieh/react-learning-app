@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/react-learning-app/static/js/main.c35f5d05.js",
+    "main.js": "/react-learning-app/static/js/main.f7c5d61d.js",
     "index.html": "/react-learning-app/index.html",
-    "main.c35f5d05.js.map": "/react-learning-app/static/js/main.c35f5d05.js.map"
+    "main.f7c5d61d.js.map": "/react-learning-app/static/js/main.f7c5d61d.js.map"
   },
   "entrypoints": [
-    "static/js/main.c35f5d05.js"
+    "static/js/main.f7c5d61d.js"
   ]
 }
