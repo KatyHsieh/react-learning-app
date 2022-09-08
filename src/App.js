@@ -17,7 +17,7 @@ function App() {
     <div>
       <Nav currentUser={currentUser} setCurrentUser={setCurrentUser} />
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
         <Route
           path="/login"
