@@ -1,0 +1,305 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+html {
+    font-family: "Montserrat", sans-serif;
+  }
+body {
+    background: rgba(149, 116, 116, 0.875);
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+    /* padding: 0 16px; */
+  }
+html::-webkit-scrollbar{
+    width:10px;
+    height:10px;
+  }
+html::-webkit-scrollbar-thumb{
+  background: #fa7373;
+  border-radius:10px;
+  }
+h1 {
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.highlightIcon:hover {
+  transform: rotate(1turn);
+  transition:1s;
+}
+.navborder {
+    position:sticky;
+    display:flex;
+    flex-wrap: wrap;
+    text-align:center;
+    width:100%;
+    margin: auto -16px auto;
+    padding: 5px 1px;
+    border-bottom:1px solid rgb(231, 228, 228);
+  }
+  @media screen and (max-width: 750px) {
+    nav {
+      width: 40vw;
+    }
+  }@media screen and (max-width: 380px) {
+    nav {
+      width: 10vw;
+    }
+  }
+    
+nav ul {
+    display:flex;
+    list-style-type:none;
+    justify-content:left ;
+  }
+
+li .a{
+    display:block;
+    color:#4a4a4a;
+    text-decoration:none;
+    padding:0.5rem 1rem;
+    transition: margin-right 2s, color 1s;
+  }
+li .a:hover{
+    color:#1b1b1b
+  }
+.how-work{
+    background: #f4d06b;
+    border-radius: 10px 100px / 120px !important;
+  }
+.asstudent{
+    text-align: right;
+    transition:2s;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%) ;
+  }
+  .asstudent:hover {
+    transform:translateY(-2rem) rotateY(3deg);
+    
+  }
+  .asinstructor{
+    position: relative;
+  left: 50%; 
+  transform: translate(-30%, -10%);
+  transition:2s;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  }
+  .asinstructor:hover {
+    transform: translate(-2rem) rotateY(2deg);
+  }
+.course-box {
+    background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+.login-page {
+    position:relative;
+    width:480px;
+    margin: 30px auto 20px auto;
+    padding:15px;
+    background: rgb(236, 233, 233);
+    border-radius: 7px;
+    box-shadow: 0 1px 5px rgb(236, 233, 233)
+}
+.search-bar {
+position: relative;
+width:480px;
+margin:30px auto 30px auto;
+border: none;
+outline: none;
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+.footer {
+  position: relative;
+  text-align:center;
+  width: 100%;
+  bottom:0;
+  height: 2.5rem;;
+color:#ccc;
+}
+
+@keyframes blink {
+  0% {
+    background: rgb(238, 152, 130)
+  }
+  15% {
+    background: rgb(231, 173, 231)
+  }
+  30% {
+    background: rgb(186, 148, 244)
+  }
+  42% {
+    background: rgb(130, 137, 238)
+  }
+  58% {
+    background: rgb(130, 224, 238)
+  }
+  70% {
+    background: rgb(161, 251, 227)
+  }
+  80% {
+    background: rgb(216, 238, 130)
+  }
+  100% {
+    background: rgb(238, 191, 130)
+  }
+
+}
+div.how-work {
+height: 400px;
+border:1px solid rgb(253, 252, 252);
+animation: blink 10s infinite;
+-webkit-animation: blink 10s infinite;;
+}
+.popular-articles{
+  position:relative;
+  /* box-sizing:content-box;
+  /* display:flex;   */
+  /* margin:0 0 var(--gap) 0; */
+}
+/* 這是設置卡片側邊條的樣式 */
+  @media (min-width:1000px){
+    .popular-articles:after{
+      content:"";
+      position:absolute;
+      right:0;
+      top:3rem;
+      bottom:3.6rem;
+      width:5px;
+      border-radius:5px;
+      background:linear-gradient(130deg,#ff7a18,rgb(186, 148, 244) 70.6%);
+      box-shadow:-10px 0 20px 3px #000}
+    }
+    /* 側邊彩色scrollbar樣式 */
+body.home .mini-card-grid{
+  scrollbar-color:rgb(234, 182, 229) #9d77f6;
+  /* scrollbar-gutter:always; */
+  padding:3rem 0 3rem 2rem;
+  margin:0;
+  display:flex;
+  overflow-x:scroll;
+  -webkit-overflow-scrolling:touch
+}
+/* 整個滾動條 */
+  body.home .mini-card-grid::-webkit-scrollbar{
+    width:10px;
+    height:10px
+  }
+  /* 這是下方scrollbar 滑塊樣式設定 */
+  body.home .mini-card-grid::-webkit-scrollbar-thumb{ 
+    background:#de1414;
+    border-radius:10px; 
+    box-shadow:inset 2px 2px 2px hsla(0,0%,100%,.25),inset -2px -2px 2px rgba(0,0,0,.25)
+  }
+
+  /* 滾動條軌道 */
+  body.home .mini-card-grid::-webkit-scrollbar-track{
+    border-radius: 1rem;
+    background:linear-gradient(90deg,#434343,#434343 1px,#262626 0,#262626)
+  }
+  
+  /* 這是卡片樣式設定  transition.2s是可以讓卡片順順滑起*/
+  .mini-card{
+    padding:1.5rem;
+    border-radius:16px;
+    background:linear-gradient(85deg,#635151,#262626);
+    display:flex;
+    flex-direction:column;
+    transition:.2s;
+    /* margin:0 */
+  }
+  .mini-card a{
+    text-decoration:none;
+  }
+  .mini-card h3 a{
+    color:#fff!important
+  }
+  .mini-card .tags{
+    margin:0 0 .5rem
+  }
+  .tags a {
+    padding:0 .5rem;
+    color:rgb(249, 102, 102)
+  }
+  .mini-card time{
+    display:block;
+    margin:0 0 .25rem;
+    color:rgb(247, 212, 212)
+  }
+  /* 給予卡片長寬高的形狀大小 */
+  body.home .mini-card{
+    min-width:300px;
+    min-height:350px;
+    box-shadow:-2rem 0 3rem -2rem #000
+  } 
+  /* 讓滑鼠游標過去時卡片會翹起 rotate(-5deg)*/
+body.home .mini-card:focus-within,body.home .mini-card:hover{
+  transform: translatey(-3rem) rotate(-5deg)
+}
+/* 讓卡片滑鼠游標過去時右邊卡片會向右滑動 */
+body.home .mini-card:focus-within~.mini-card,body.home .mini-card:hover~.mini-card{
+  transform:translateX(130px)
+}
+/* hover first card different change */
+body.home .mini-card:first-child:focus-within,body.home .mini-card:first-child:hover{
+  transform:translate(-.5rem,-1rem) rotate(3deg)
+}
+/*let card overlap to the left */
+body.home .mini-card:not(:first-child){
+  margin-left:-130px;
+  box-shadow:-3rem 0 3rem -2rem #000
+}  
+/* width < 800px different change */
+@media (max-width:800px){
+  body.home .mini-card{min-width:190px} 
+  body.home .mini-card:not(:first-child){margin-left:-10px}
+  body.home .mini-card:hover{transform:translateY(-1rem)}
+  body.home .mini-card:hover~.mini-card{transform:translateX(10px)}
+}
+.mini-card-title{
+  font-size:1.3rem;
+  margin:0 0 1rem;
+}
+.teacher {
+  margin: 0 0 1rem;
+  width:50px;
+  border-radius:10rem
+}
+.mini-card img {
+  box-shadow: -1rem 0 3rem #434343;
+}
+
+/*  */
+
+.shiny {
+  color: white;
+  position: relative;
+  border: none;
+  padding: 10px 15px;
+  background: #3984ff;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.shiny::after {
+  content: "";
+  position: absolute;
+  top: calc(var(--y, 0) * 1px - 50px);
+  left: calc(var(--x, 0) * 1px - 50px);
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(white, #3984ff00 80%);
+
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.shiny:hover::after {
+  opacity: 0.4;
+} 
